@@ -1,0 +1,12 @@
+0x0001
+
+   vi /etc/my.cf 在 [mysqld] 下添加
+   skip-grant-tables
+
+0x0010
+   登录mysql
+    mysql -uroot -p
+ 
+   修改密码
+    flush privileges
+    ALTER USER 'root'@'localhost' IDENTIFIED BY '12345678';
